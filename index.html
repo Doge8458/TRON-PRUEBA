@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TRON Browser Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="layout">
+    <section class="panel">
+      <h1>TRON: Light Cycles</h1>
+      <p>
+        Evita chocar contra paredes o contra cualquier rastro de luz. Gana el jugador que sobreviva.
+      </p>
+      <ul>
+        <li><strong>Jugador 1 (azul):</strong> W A S D</li>
+        <li><strong>Jugador 2 (naranja):</strong> Flechas</li>
+      </ul>
+      <button id="restartBtn">Reiniciar partida</button>
+      <p id="status" aria-live="polite">Pulsa una dirección para empezar.</p>
+    </section>
+
+    <section class="arena-wrap">
+      <canvas id="game" width="900" height="540" aria-label="Arena de juego TRON"></canvas>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
